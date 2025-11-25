@@ -24,7 +24,7 @@ def cnns_model():
         layers.Dense(256, activation='relu'),
         layers.Dropout(0.1),
         layers.BatchNormalization(),
-        layers.Dense(1, activation='sigmoid')
+        layers.Dense(24, activation='softmax')
     ])
 
     return model

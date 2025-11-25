@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1e623f65-64b6-425f-b532-3d9b7ef6058c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Data_upload.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/sign_mnist_test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Dataset/sign_mnist_train.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_normalization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_upload_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data_upload_train.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_upload.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
