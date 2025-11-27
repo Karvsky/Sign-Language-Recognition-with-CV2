@@ -13,18 +13,18 @@ def cnns_model():
         layers.Dense(256, activation='relu'),
         layers.BatchNormalization(),
         layers.Dense(256, activation='relu'),
-        layers.Dropout(0.1),
+        layers.Dropout(0.3),
         layers.BatchNormalization(),
         layers.Dense(256, activation='relu'),
-        layers.Dropout(0.2),
+        layers.Dropout(0.4),
         layers.BatchNormalization(),
         layers.Dense(256, activation='relu'),
-        layers.Dropout(0.2),
+        layers.Dropout(0.4),
         layers.BatchNormalization(),
         layers.Dense(256, activation='relu'),
-        layers.Dropout(0.1),
+        layers.Dropout(0.3),
         layers.BatchNormalization(),
-        layers.Dense(24, activation='softmax')
+        layers.Dense(25, activation='softmax')
     ])
 
     return model

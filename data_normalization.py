@@ -1,24 +1,23 @@
-from data_upload_test import data_import
-from data_upload_train import data_import
+import numpy as np
+from data_upload_test import data_import_test
+from data_upload_train import data_import_train
 
 def normalization_train():
 
-    img, label = data_import()
-    normalized_dataset = []
+    img, label = data_import_train()
+    img = np.array(img)
+    label = np.array(label)
+    img_normalized = img.astype('float32') / 255.0
+    img_ready = img_normalized.reshape(-1, 28, 28, 1)
 
-    for i in img:
-        img_float = i.astype('float32')
-        normalized_dataset.append(img_float / 255.0)
-
-    return normalized_dataset
+    return img_ready, label
 
 def normalization_test():
 
-    img, label = data_import()
-    normalized_dataset = []
+    img, label = data_import_test()
+    img = np.array(img)
+    label = np.array(label)
+    img_normalized = img.astype('float32') / 255.0
+    img_ready = img_normalized.reshape(-1, 28, 28, 1)
 
-    for i in img:
-        img_float = i.astype('float32')
-        normalized_dataset.append(img_float / 255.0)
-
-    return normalized_dataset
+    return img_ready, label
